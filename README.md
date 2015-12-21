@@ -1,6 +1,6 @@
 # Glosser
 
-A jQuery plugin for [linguistic glossing](https://en.wikipedia.org/wiki/Gloss_(annotation)).
+A [jQuery](https://jquery.com/) plugin for [linguistic glossing](https://en.wikipedia.org/wiki/Gloss_(annotation)).
 
 ## Installation
 
