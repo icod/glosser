@@ -36,7 +36,7 @@ Simply create an HTML element like a `span` or `div` and give it a meaningful cl
 </div>
 ```
 
-Every line will be a glossed line. Every word on each line will be intrepreted as a separate gloss, divided by spaces. To have a gloss consist of multiple words (i.e. contain a space), place the intended gloss between brackets `{}`.
+Every line will be a glossed line. Every word on each line will be intrepreted as a separate gloss, divided by spaces. To have a gloss consist of multiple words (i.e. contain a space), place the intended gloss between curly brackets `{}`.
 
 Next, use this simple JavaScript line to select the container and call the Glosser function. 
 
