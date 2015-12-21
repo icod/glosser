@@ -1,0 +1,30 @@
+{
+  "name": "glosser",
+  "authors": [
+    "Ico Davids <ico.davids@gmail.com>"
+  ],
+  "description": "A jQuery plugin for linguistic glossing.",
+  "main": [
+    "js/glosser.js",
+    "css/glosser.css"
+  ],
+  "keywords": [
+    "jquery",
+    "glosser",
+    "linguistics",
+    "linguistic glossing",
+    "lists"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.github.com/icod/glosser",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
