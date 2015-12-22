@@ -1,1 +1,1 @@
-.glosser-container{display:block}.glosser-item{display:inline-block;vertical-align:top}.glosser-item ul{padding:0}.glosser-item li{display:block;list-style:none;padding-right:.5em;width:auto}.glosser-row-1{font-style:italic;font-weight:bold}
+.glosser-container{display:block}.glosser-item{display:inline-block;vertical-align:top}.glosser-item:not(:last-child){padding-right:.5em}.glosser-item ul{padding:0}.glosser-item li{display:block;list-style:none;width:auto}.glosser-row-1{font-style:italic;font-weight:bold}
