@@ -2,6 +2,8 @@
 
 A [jQuery](https://jquery.com/) plugin for [linguistic glossing](https://en.wikipedia.org/wiki/Gloss_(annotation)).
 
+![](example.png)
+
 ## Installation
 
 You can use [Bower](http://bower.io/) to install Glosser, by running the following command. 
