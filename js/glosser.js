@@ -2,9 +2,9 @@ jQuery.fn.extend({
   glosser: function(options) {
 
     var defaults = {
-      separator:  " ",
-      emptyGloss: "",
-      escape:     "{}"
+      separator:  " ",  // Separates gloss items on each line
+      emptyGloss: "",   // The character that is inserted, when a gloss is missing
+      escape:     "{}"  // Escape characters/tags for a gloss group
     }
     var settings = $.extend({}, defaults, options);
     
