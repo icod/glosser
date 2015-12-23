@@ -4,7 +4,8 @@ jQuery.fn.extend({
     var defaults = {
       separator:  " ",  // Separates gloss items on each line
       emptyGloss: "",   // The character that is inserted, when a gloss is missing
-      escape:     "{}"  // Escape characters/tags for a gloss group
+      escape:     "{}",  // Escape characters/tags for a gloss group
+      prefix:     "glosser"  // Prefix for all added CSS classes
     }
     var settings = $.extend({}, defaults, options);
     
@@ -13,7 +14,7 @@ jQuery.fn.extend({
       var content = container;
       content = $.trim(content.html());
       var lines = content.split('\n');
-      container.empty().addClass('glosser-container');
+      container.empty().addClass(settings.prefix+'-container');
       $.each(lines, function(i) {
         lines[i] = $.trim(lines[i]);
         lines[i] = lines[i].replace(/  +/g, ' ');
@@ -33,10 +34,11 @@ jQuery.fn.extend({
       });
 
       for (var i = 0; i < lines[0].length; i++) {
-        var gloss = $('<span><ul></ul></span>').addClass('glosser-item');
+        var gloss = $('<span><ul></ul></span>').addClass(settings.prefix+'-item');
         $.each(lines, function(j) {
           var glossWord = (typeof lines[j][i] !== "undefined") ? lines[j][i] : "";
-          gloss.find('ul').append('<li class="glosser-row-' + (j + 1) + '">' + glossWord + '</li>');
+          var glossElement = $('<li>'+glossWord+'</li>').addClass( settings.prefix + '-row-' + (j + 1) );
+          gloss.find('ul').append(glossElement);
         });
         container.append(gloss);
       }
