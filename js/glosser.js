@@ -13,7 +13,6 @@ jQuery.fn.extend({
       var content = container;
       content = $.trim(content.html());
       var lines = content.split('\n');
-      var glosses = $('div');
       container.empty().addClass('glosser-container');
       $.each(lines, function(i) {
         lines[i] = $.trim(lines[i]);
@@ -43,4 +42,5 @@ jQuery.fn.extend({
       }
     });
   }
+  
 });
